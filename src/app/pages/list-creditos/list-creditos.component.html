@@ -1,0 +1,10 @@
+
+	<div class="container">
+		<div class="card bg-light cardContain"  *ngFor="let credito of creditos">
+			<div class="card-header">Credito #{{credito.id}}</div>
+			<div class="card-body">
+			  <h5 class="card-title">{{credito.monto}}</h5>
+			  <p class="card-text">{{credito.plazo}}</p>
+			</div>
+		  </div>
+		</div>

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CreditoComponent } from './pages/credito/credito.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ListCreditosComponent } from './pages/list-creditos/list-creditos.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CreditoComponent
+    CreditoComponent,
+    ListCreditosComponent
   ],
   imports: [
     BrowserModule,

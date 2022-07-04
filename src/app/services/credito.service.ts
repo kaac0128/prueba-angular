@@ -14,17 +14,15 @@ export class CreditoService {
 
   constructor( private http: HttpClient) { }
 
-  getNominados(): Observable<any>{
-	if(this.solicitudCredito.length != 0){
-	  return of(this.solicitudCredito);
-	}else{
+  getListCreditos(): Observable<any>{
+	
 	  return this.http.get<Credito[]>(`${ environment.url }list`)
 	  .pipe(
 		  tap(
 			solicitudCredito => this.solicitudCredito = solicitudCredito
 		  )
 	  )
-	}
+	
 	
 }
   guardarSolicitud(solicitud: any): Observable<any>{

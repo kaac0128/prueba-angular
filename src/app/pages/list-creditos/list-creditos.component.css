@@ -1,0 +1,48 @@
+
+
+.container{
+	padding-left: 5%;
+	justify-content: center;
+	padding-top: 2em;
+	padding-bottom: 4em;
+	background-color:rgb(235, 191, 109);
+	max-width: 100%;
+}
+
+.cardContain{
+	margin-left: 1em;
+	width: 30%;
+	margin-top: 1em;
+	display: inline-block;
+}
+
+@media (max-width: 667px) { 
+	.container{
+		background-color: white;
+	}
+}
+
+@media (max-width: 537px) { 
+	.container{
+		display: block;
+	}
+
+	.cardContain{
+		display: inline-block;
+		margin-top: 1em;
+		width: 30%;
+		margin-left: .5em;
+	}
+}
+
+@media (max-width: 411px) { 
+	
+	
+	.cardContain{
+		display: block;
+		margin-top: 1em;
+		width: 95%;
+
+	}
+}
+

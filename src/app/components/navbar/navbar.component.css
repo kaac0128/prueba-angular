@@ -79,3 +79,15 @@
 	}
 
 }
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.menu2{
+	font-size: smaller;
+	cursor: pointer;
+	text-decoration: underline;
+	margin-left: .2em;
+}
