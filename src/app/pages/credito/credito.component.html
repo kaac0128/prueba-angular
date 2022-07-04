@@ -1,0 +1,16 @@
+<div class="container">
+	<form [formGroup]="creditoForm" (ngSubmit)="onSubmit()" class="form-credito">
+		<h2 class="fs-title">Monto a solicitar</h2>
+		<input [class.is-invalid]="this.creditoForm.controls.monto.touched && this.creditoForm.controls.monto.invalid" formControlName="monto" type="text" placeholder="Inrese el monto a solicitar" class="monto">
+    	<h3 class="fs-subtitle">Plazo</h3>
+		<button type="button" class="item-submit" (click)="diasDePlazo(10)">10 Dias</button>
+		<button type="button" class="item-submit" (click)="diasDePlazo(20)">20 Dias</button>
+		<button type="button" class="item-submit" (click)="diasDePlazo(30)">30 Dias</button>
+		<button type="submit" [disabled]="!creditoForm.valid"  class="item-submit-finish">Solicitar</button>
+	</form>
+	<div class="banner">
+		<h1 class="text-banner">Con GREDI encuentras la solucion a tus problemas</h1>
+	</div>
+</div>
+
+

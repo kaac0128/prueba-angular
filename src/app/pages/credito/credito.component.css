@@ -1,0 +1,116 @@
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	color: black;
+	margin-bottom: 20px;
+	font-size: medium;
+	margin-top: 5%;
+}
+
+.form-credito{
+	background: rgb(247, 244, 244);
+	border: 0 none;
+	border-radius: 2%;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 20em;
+	text-align:center;
+}
+
+.item-submit{
+	width: 52%;
+	margin-bottom: 2%;
+	padding: 2%;
+	border-radius: 15px;
+	border-color: white ;
+	background-color:rgb(235, 191, 109);
+	color: rgb(68, 66, 66);
+	cursor: pointer;
+}
+
+.item-submit:hover {
+	background: #fff ;
+	color: rgb(235, 191, 109);
+	border-color: rgb(235, 191, 109);
+  }
+
+.item-submit-finish{
+	width: 100%;
+	padding: 2%;
+	border-radius: 15px;
+	border-color: white ;
+	background-color:rgb(235, 191, 109);
+	color: rgb(68, 66, 66);
+	cursor: pointer;
+
+}
+
+.item-submit:active {
+	transform: scale(0.98);
+	/* Scaling button to 0.98 to its original size */
+	box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+	/* Lowering the shadow */
+}
+
+.item-submit-finish:active {
+	transform: scale(0.98);
+	/* Scaling button to 0.98 to its original size */
+	box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+	/* Lowering the shadow */
+}
+
+.app-credito{
+	background-color: rgb(235, 191, 109);
+}
+
+.monto{
+	padding: 2%;
+	border-radius: 8px;
+	width: 80%;
+	border-color: white ;
+	text-align: center;
+	border-top:none;
+	border-left: none;
+	border-right:none;
+	border-bottom-color: rgb(235, 191, 109);
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	background-color:rgb(235, 191, 109);
+	padding: 6% 0% 4% 0%;
+	width: 100%;
+	margin: 0%;
+	max-width: 100%;
+}
+
+.banner{
+	display: block;
+	width: 30em;
+
+}
+
+.text-banner{
+	margin:auto;
+	padding-top: 4em;
+	text-align: center;
+}
+
+@media (max-width: 667px) { 
+	.banner{
+		display: none;
+	}
+
+	.container{
+		background-color: white;
+		border-radius: 40px 40px 40px 40px;
+	}
+}
+
